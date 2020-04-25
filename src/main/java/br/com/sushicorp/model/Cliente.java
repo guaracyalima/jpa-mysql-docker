@@ -1,4 +1,4 @@
-package br.com.algaworks.curso.model;
+package br.com.sushicorp.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -55,5 +55,13 @@ public class Cliente {
 	public void setProfissao(String profissao) {
 		this.profissao = profissao;
 	}
+
+	@Override
+	public String toString() {
+		return "Cliente [codigo=" + codigo + ", nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + ", profissao="
+				+ profissao + "]";
+	}
+	
+	
 
 }

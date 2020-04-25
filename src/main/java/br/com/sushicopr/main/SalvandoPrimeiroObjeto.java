@@ -1,10 +1,10 @@
-package br.com.algaworks.curso.main;
+package br.com.sushicopr.main;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import br.com.algaworks.curso.model.Cliente;
+import br.com.sushicorp.model.Cliente;
 
 public class SalvandoPrimeiroObjeto {
 
@@ -17,8 +17,8 @@ public class SalvandoPrimeiroObjeto {
 		em.getTransaction().begin();
 		Cliente client = new Cliente();
 		client.setIdade(28);
-		client.setNome("Jurubeba");
-		client.setProfissao("Ladrao");
+		client.setNome("Irmão do Jorel");
+		client.setProfissao("Programador");
 		client.setSexo("S");
 		
 		em.persist(client);
